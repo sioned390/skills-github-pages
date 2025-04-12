@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Chewy&family=Jua&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d16ef8a4a1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <input type="checkbox" name="bars" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="Adventures_with_goonie_!.html" class="logo">Adventures with Goonie!</a>
+
+        <nav class="navbar">
+            <a href="Adventures_with_goonie_!.html#about">About</a>
+            <a href="Interactive_Map.html">Interactive Map</a>
+            <a href="Helpful_Links.html">Helpful links</a>
+        </nav>
+
+        <div class="icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </header>
+    
+    <section class="map-text">
+        <h1>Welcome to the Interactive Map!</h1>
+        <p>Click on the markers to see where we have ventured so far and what our thoughts were!</p>
+    </section>
+
+    <div class="map" id="map"></div>
+    
+
+    <footer>
+        <p>&copy; 2025 Adventures with Goonie. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

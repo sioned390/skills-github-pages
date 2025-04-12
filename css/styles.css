@@ -1,0 +1,1138 @@
+:root{
+    --orange: #b43b07;
+    
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+
+
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background-color: var(--orange);
+    padding: 1rem 4rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+    color: #fff;
+    font-family: jua;
+}
+
+.btn:hover{
+    background-color:#d14509;
+}
+
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+
+}
+
+header .logo{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: var(--orange);
+    font-family: Jua;
+}
+
+header .navbar a{
+
+    font-size: 2rem;
+    padding: 0 3rem;
+    color: #333;
+    font-family: chewy;
+
+}
+
+header .navbar a:hover{
+    color: var(--orange);
+}
+
+header .icons a{
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover{
+    color: var(--orange);
+}
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    border: .1rem solid #333;
+    cursor: pointer;
+    display: none;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background:url("../src/Parys_mountain/Parys_mountain.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+   max-width: 50rem;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    color: #fff;
+    font-family: Jua;
+}
+
+.home .content p{
+    font-size: 2rem;
+    color: #ffffff;
+    padding: 1rem 0;
+    line-height: 1.5;
+    font-family: 'Trebuchet MS', sans-serif
+}
+
+
+h3{
+    text-align: left;
+    font-size: 5rem;
+    color: #333;
+    margin-top: 10%;
+    font-family: Jua;
+    color: var(--orange);
+}
+
+.fa-solid{
+     margin-left: 10%;
+    color: #333;
+}
+
+.aboutcontent p{
+
+    font-size: 25px;
+    font-family: jua;
+
+}
+
+
+.img1 {
+    max-width: 100%; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    float: right;
+    margin-right: 15%;
+}
+
+.aboutcontent{
+    display: flex; /* Use flexbox for layout */
+    align-items:center; /* Align items to the top */
+    justify-content: space-between; /* Space between text and images */
+    margin-top: 0;
+    background:url("../src/misc/Background.jpeg.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.aboutcontent .text {
+    flex: 1; /* Allow the text to take up available space */
+    color: #333;
+    line-height: 2.5;
+    margin-left: 5%;
+    margin-right: 15%;
+    text-align: justify;
+    margin-bottom: 5%;
+}
+
+.aboutcontent .images {
+    display: flex; /* Use flexbox for stacking images */
+    gap: 1rem; /* Add spacing between images */
+    align-items: center; /* Align images to the right */
+    flex: 0 0 auto; /* Prevent images from stretching */
+}
+
+.aboutcontent .images .img1 {
+    width: 600px; /* Set a fixed width for the images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(243, 239, 239, 0.5); /* Add a shadow */
+    margin-right: 10rem;
+    margin-top: 15%;
+}
+
+.about{
+    padding: 0;
+}
+
+
+
+/*Links Section*/
+
+.links{
+    padding: 0;
+}
+.linksHeading {
+    background-color: darkolivegreen;
+    height: 50%;
+}
+
+h4{
+    text-align: center;
+    font-size: 6rem;
+    font-family: Jua;
+    color: beige;
+    line-height: 2;
+}
+
+.card-container{
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the cards horizontally */
+    flex-wrap: wrap;
+    margin-top: 50px;
+   
+}
+.card{
+    width:500px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px; /* Add spacing between cards */}
+
+.card img{
+    width:500px; /* Set your preferred width */
+    height: 300px; /* Set your preferred height */
+    object-fit: cover; /* Ensures images crop rather than stretch */
+}
+
+.card h3{
+    font-size: 30px;
+    color: #333;
+    padding: 16px;
+    font-family: Jua;
+    text-align: left;
+}
+
+
+.card p{
+    font-size: 15px;
+    color: #666;
+    line-height: 1.3;
+    padding: 16px;
+
+}
+
+.card .btn {
+    display: inline-block;
+    padding: 2rem;
+    background-color: var(--orange);
+    text-decoration: none;
+    border-radius: 5rem;
+    margin: 16px 16px 16px 16px;
+    color: #fff;
+}
+
+.card .btn:hover{
+    background-color:#d14509;
+}
+
+
+
+
+
+/*Aberlleiniog STYLES*/
+
+.gallerycontainer{
+     height: auto; 
+     justify-content: center;  /* Center the images horizontally */
+}
+
+.photo-gallery{
+    display: flex;
+    gap: 10px;
+}
+
+.column{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Photo img{
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.img-section{
+    width: 100vw; /* Make the section span the full width of the viewport */
+    display: flex; /* Use flexbox for layout */
+    gap: 10px; /* Add spacing between images */
+    justify-content: center; /* Center the images horizontally */
+    align-items: center; /* Align the images vertically */
+    margin: 0 auto; /* Center the section within the viewport */
+    padding: 0; /* Remove any default padding */
+    overflow: hidden; /* Prevent content overflow */
+    box-sizing: border-box; /* Ensure padding and borders are included in the width/height */
+    margin-top: 4%;
+}
+
+.img-section img {
+    width: 100%; /* Make the image fill the width of its container */
+    max-width: 695px; /* Set a maximum width for the images */
+    height: 500px; /* Maintain aspect ratio */
+    object-fit: cover; /* Crop the image to fit the container */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
+}
+
+/*End of image section*/
+
+/*Information Section*/
+
+
+article{
+    padding: 0;
+    max-width: 60%;
+    display: flex; /* Use Flexbox to align text and sidebar horizontally */
+    justify-content: space-between; /* Add space between the text and sidebar */
+    align-items: flex-start; /* Align items to the top */
+    gap: 2rem;
+    float: left;
+     margin-left: 5%; 
+}
+
+.text-container p{
+
+    font-size: 2rem;
+    color: #333;
+    line-height: 1.5;
+    margin-top: 3%;
+    font-family: 'Comfortaa', sans-serif;
+    text-align: justify; /* Justify text for better readability */
+    max-width: 90%;
+}
+
+.text-container h1{
+    font-size: 8rem;
+    color: #333;
+    margin-top: 5%;
+    margin-left: 2rem;
+    font-family: 'Roboto Slab';
+    text-align: left;
+}
+
+.fa-star {
+    color: rgb(255, 230, 0);
+    margin-left: 5px; /* Reduce the gap between stars */
+    font-size: 5rem; 
+    margin-bottom: 3%;
+}
+
+
+
+
+
+.rating {
+    margin-top: 2%;
+    /* margin-left: 0%; */
+}
+
+.tripadvisor {
+    display: flex; /* Align image and link horizontally */
+    align-items: center; /* Vertically align items */
+    /* gap: 2rem; */ /* Add spacing between the image and link */
+    margin-bottom: 2rem; /* Add spacing below the TripAdvisor section */
+}
+
+.tripadvisor img {
+    width: 250px; /* Set a fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 5%;
+    margin-right: 5%;
+}
+
+.tripadvisor a{
+    /* padding: 2rem; */
+    margin-top: 5%;
+}
+
+
+h2{
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #333;
+    font-family: 'Roboto Slab';
+    text-align: left;
+    margin-top: 2%;
+}
+
+.tripadvisor a {
+    text-decoration: none;
+    color: #333;
+    font-size: 2.5rem;
+    font-family: 'Comfortaa', sans-serif;
+    cursor: pointer;
+}
+
+.tripadvisor a:hover {
+    color: var(--orange); /* Change color on hover */
+}
+
+
+
+
+
+
+/*Sidebar Section*/
+
+aside{
+    position: sticky;
+    top: 0;
+    width: 35%;
+    float: right;
+    background-color: #f5ebd6;
+    margin-top: 1%;
+    border-radius: 30px 0 0 30px; /* Top-right and bottom-right corners rounded */
+}
+    
+
+aside h2{
+    font-size: 4rem;
+    color: #333;
+    font-family: 'Roboto Slab';
+    text-align: left;
+    margin: 5% 5% 5% 5%;
+}
+
+aside p{
+    font-size: 2rem;
+    color: #333;
+    line-height: 1.5;
+    font-family: 'Comfortaa', sans-serif;
+    text-align: left; /* Justify text for better readability */
+    margin: 5% 5% 5% 5%;
+    max-width: 80%;
+    margin-left: 5%;
+}
+ 
+aside .btn2  {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    align-items: center; /* Center the button vertically */
+    margin: 1rem auto; /* Center the button within the sidebar */
+    border-radius: 7.5rem;
+    background-color: var(--orange);
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: #fff;
+    font-family: jua;
+    height: 125px;
+    width: 250px; /* Set a fixed width for the button */
+    margin-bottom: 5%;
+}
+
+
+
+
+.btn2:hover{
+    background-color:#d14509;
+}
+
+body {
+    display: flex;
+    padding:0 10px;
+    flex-direction: column; /* Stack header, main, and footer vertically */
+    min-height: 100vh; /* Ensure the body is at least the height of the viewport */
+    margin: 0; /* Remove default margin */
+    align-items: center;
+    justify-content: center;
+}
+
+/* Make the main content take up available space */
+main {
+    flex: 1; /* Allow the main content to grow and fill the space */
+}
+
+/* Footer styling */
+footer{
+    background:darkolivegreen;
+    color: #fff;
+    padding: 2rem; 
+    width: 100%;
+}
+
+footer p{
+    text-align: left;
+    font-size: 1.5rem;
+    font-family: Jua;
+}
+
+/*Carousel*/
+
+.carousel-container{
+    max-width:1200px;
+    position: relative;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+.carousel-container i{
+    top: 50%;
+    background:  #f5ebd6;
+    font-size: 1.2rem;
+    position: absolute;
+    cursor: pointer;
+    text-align: center;
+    list-style: none;
+    line-height: 46px;
+    height: 46px;
+    width: 46px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.carousel-container i:first-child{
+    left: -23px;
+    margin: 0;
+}
+.carousel-container i:last-child{
+    right: -23px;
+    margin: 0;
+}
+.carousel-container .carousel{
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior:smooth ;
+
+}
+
+.carousel.dragging{
+    scroll-behavior:auto;
+    cursor: grabbing;
+}
+
+.carousel.dragging img{
+    pointer-events: none;
+}
+.carousel img{
+    height: 340px;
+    object-fit: contain;
+    margin-left: 10px;
+    width: calc(100%/3);
+}
+
+.carousel img:first-child{
+    margin-left: 0px;
+}
+
+.img-wrapper {
+    position: relative;
+    display: inline-block;
+    width: calc(100%/3);
+    margin-left: 10px;
+}
+
+.img-wrapper:first-child {
+    margin-left: 0px;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+}
+
+.caption {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-family: Jua, sans-serif;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+
+
+.map{
+   
+    height: 100vh;
+    width: 100%;    
+    
+}
+
+.map-text {
+    position: absolute;
+    top: 150px; /* Adjust the vertical position */
+    left: 20px; /* Adjust the horizontal position */
+    margin-left: 3%;
+    background-color: #f5ebd6;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensure it appears above the map */
+    height: 10%;
+    padding: 20px; /* Add padding for better spacing */
+    width: 30%;
+    height: auto;
+}
+
+.map-text h1 {
+    font-size: 4rem; /* Adjust font size */
+    color:var(--orange); /* Text color */
+    margin: 0; /* Remove default margin */
+    font-family: 'Jua', sans-serif; /* Font family */
+    float: left;
+    margin-bottom: 5%;
+
+}
+
+.map-text p {
+    font-size: 2rem; /* Adjust font size */
+    color:#333; /* Text color */
+    margin: 0; /* Remove default margin */
+    font-family: 'Jua', sans-serif; /* Font family */
+    float: left;
+}
+
+/* Style for the popup container */
+.custom-popup-class .leaflet-popup-content-wrapper {
+    background-color: #f9f9f9; /* Light background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    width: 300px; /* Fixed width for the popup */
+    padding: 10px; /* Add padding */
+}
+element.style {
+    position: absolute;
+    outline-style: none;
+}
+/* Align content in the popup */
+.popup-content {
+    display: flex; /* Use Flexbox for layout */
+    align-items: flex-start; 
+    gap: 10px; /* Add spacing between the image and text */
+}
+
+/* Style for the popup image */
+.popup-image {
+    width: 100px; /* Set a fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-right: 5%; /* Add a shadow */
+}
+
+/* Style for the text content */
+.popup-text {
+    text-align: left; /* Align text to the left */
+    font-family: 'Arial', sans-serif; /* Clean font */
+    font-size: 10px; /* Adjust font size */
+    color: #333; /* Text color */
+}
+
+/* Style for the stars */
+.popup-stars i {
+    color: #FFD700; /* Gold color for stars */
+    font-size: 12px; /* Adjust size */
+    margin-left: 0;
+    margin-top: 4%;
+}
+
+/* Style for the links */
+.popup-text a {
+    color: var(--orange);
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold links */
+    margin-top: 5px; /* Add spacing between links */
+    font-size: 10px;
+    line-height: 2;
+    font-family: Jua;
+}
+
+.popup-text a:hover {
+    color: #b33900; /* Darker color on hover */
+    text-decoration: underline; /* Add underline on hover */
+    
+}
+
+/* Helpful Links Section */
+
+.grid-container {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Responsive grid */
+    gap: 5rem; /* Add spacing between items */
+    margin: 2rem auto; /* Center the section */
+    padding: 2rem;
+    max-width: 120%; /* Limit the width of the section */
+    text-align: center; /* Center-align text */
+}
+
+.grid-container a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color */
+    display: block; /* Make the entire block clickable */
+    transition: transform 0.3s ease; /* Add hover effect */
+}
+
+.grid-container a:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.grid-container img {
+    margin-top: 13%;
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+.grid-container p {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    font-family: 'Jua', sans-serif;
+}
+
+.helpful-links {
+    padding:0; /* Add padding */
+}
+
+
+
+/* Responsive Styles */
+
+/* Base responsive adjustments */
+@media (max-width: 991px) {
+    html { font-size: 55%; }
+    header, section, .aboutcontent { padding: 1.5rem; }
+  
+    .home {
+      background-position: center;
+      min-height: 80vh;
+    }
+  
+    .home .content h3 { font-size: 4rem; }
+    .home .content p { font-size: 1.6rem; }
+  
+    .aboutcontent {
+      flex-direction: column;
+    }
+  
+    .aboutcontent .text {
+      margin-right: 0;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+  
+    .aboutcontent .images img {
+      width: 80%;
+      margin-right: 0;
+    }
+  
+    .carousel img,
+    .photo-gallery .img1 {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+  
+    article {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+    }
+  
+    .text-container p {
+      font-size: 1.5rem;
+      line-height: 1.5;
+      margin-left: 2rem;
+    }
+  
+    .text-container h1 {
+      font-size: 5rem;
+      margin-left: 2rem;
+    }
+  
+    .rating {
+      margin-left: 2rem;
+      text-align: left;
+    }
+  
+    .rating i { font-size: 2rem; }
+  
+    aside {
+      width: 40%;
+    }
+  
+    aside p {
+      font-size: 2rem;
+      line-height: 1.5;
+      margin-left: 2rem;
+    }
+  
+    aside .btn2 {
+      font-size: 2rem;
+      padding: 1rem;
+      width: 200px;
+    }
+  
+    h2 {
+      font-size: 2rem;
+      margin-left: 2rem;
+    }
+  
+    .tripadvisor img {
+      width: 100px;
+      height: auto;
+      margin-left: 2rem;
+    }
+  
+    .tripadvisor a {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    html { font-size: 50%; }
+  
+    header .fa-bars { display: block; }
+  
+    header .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: #eee;
+      border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+      clip-path: inset(0 0 100% 0);
+      transition: clip-path 0.3s ease-in-out;
+    }
+  
+    header #toggler:checked ~ .navbar {
+      clip-path: inset(0 0 0 0);
+    }
+  
+    header .navbar a {
+      margin: 1rem;
+      padding: 1rem;
+      background: #fff;
+      border: 0.1rem solid rgba(0, 0, 0, 0.1);
+      display: block;
+    }
+  
+    .home .content h3 { font-size: 3.5rem; }
+    .home .content p { font-size: 1.2rem; }
+  
+    .aboutcontent p { font-size: 1.5rem; }
+    .aboutcontent .text {
+      margin-bottom: 1rem;
+      text-align: left;
+    }
+  
+    .carousel img { width: calc(100% / 1.5); }
+  }
+  
+  @media (min-width: 450px) and (max-width: 650px) {
+    html { font-size: 45%; }
+  
+    header { padding: 2rem; }
+    .heading { font-size: 2.5rem; }
+    .home { min-height: 70vh; }
+    .home .content h3 { font-size: 3rem; }
+    .home .content p { font-size: 1.2rem; }
+    .aboutcontent p { font-size: 1.5rem; }
+    .aboutcontent .images img {
+      width: 200px;
+      height: auto;
+      margin: 0 auto;
+    }
+    .carousel img { width: calc(100% / 2); }
+
+        .photo-gallery {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1rem;
+        }
+      
+        .photo-gallery img,
+        .img1 {
+          width: 100%;
+          height: auto;
+          margin: 0 auto;
+        }
+      }
+      
+  
+  @media (max-width: 450px) {
+    .img1 { width: 60%; }
+    .text-container {
+      max-width: 100%;
+      text-align: center;
+    }
+    .text-container h1 { font-size: 4rem; }
+    aside .btn2 {
+      font-size: 1rem;
+      width: 50%;
+    }
+    aside h2 { font-size: 25px; margin-left: 2rem; }
+    h2 { font-size: 1.5rem; }
+    .fa-paw { font-size: 2rem; margin-left: 2rem; }
+    .tripadvisor img {
+      width: 100px;
+      margin-left: 1rem;
+    }
+    .tripadvisor h1, .tripadvisor a {
+      font-size: 1rem;
+      margin-left: 2rem;
+    }
+    .carousel-container {
+      width: 100%;
+      height: 50%;
+    }
+    .carousel-container img {
+      width: 50%;
+    }
+  }
+  
+  @media screen and (min-width: 800px) and (max-width: 1200px) {
+    .tripadvisor img {
+      width: 100px;
+      height: auto;
+      margin-left: 1rem;
+    }
+    .tripadvisor a {
+      font-size: 1rem;
+    }
+    .text-container p {
+      font-size: 1.5rem;
+      margin-left: 2rem;
+    }
+    .text-container h1 { font-size: 5rem; margin-left: 2rem; }
+    .rating { margin-left: 2rem; }
+    .rating i { font-size: 2rem; }
+  }
+  
+  @media (min-width: 1024px) and (max-width: 1366px) {
+    html { font-size: 58%; }
+  
+    .aboutcontent {
+      padding: 2rem 5%;
+    }
+  
+    .aboutcontent p {
+      font-size: 2rem;
+    }
+  
+    .aboutcontent .text {
+      margin-left: 3%;
+      margin-right: 10%;
+      font-size: 1rem;
+    }
+  
+    .aboutcontent .images .img1 {
+      width: 400px;
+      height: auto;
+      margin-right: 2rem;
+    }
+  
+    .home .content h3 { font-size: 5rem; }
+    .home .content p { font-size: 1.5rem; }
+  
+    header .logo { font-size: 2.5rem; }
+    header .navbar a { font-size: 1.8rem; }
+  
+    h3 { font-size: 4rem; }
+    h4 { font-size: 5rem; }
+  
+    .photo-gallery {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+  
+    .img1 {
+      width: 60%;
+      margin: 0 auto;
+    }
+  
+    article {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+    }
+  
+    .text-container p {
+      font-size: 2rem;
+      margin-left: 2rem;
+    }
+  
+    .text-container h1 { font-size: 5rem; }
+    .rating { margin-left: 2%; }
+    .rating i { font-size: 3rem; }
+  
+    aside p {
+      font-size: 2rem;
+      margin-left: 2rem;
+    }
+  
+    aside .btn2 {
+      font-size: 2rem;
+      width: 80%;
+    }
+  
+    h2 { font-size: 3rem; margin-left: 2rem; }
+    .fa-paw { font-size: 3rem; margin-left: 2rem; }
+  
+    .tripadvisor img {
+      width: 200px;
+      margin-left: 1rem;
+    }
+  
+    .tripadvisor a {
+      font-size: 2.5rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .map-text {
+      position: absolute;
+      width: 90%;
+      left: 5%;
+      top: 7%;
+      margin: 20px auto;
+      padding: 15px;
+      text-align: center;
+    }
+  
+    .map-text h1 {
+      font-size: 2.5rem;
+      float: left;
+    }
+  
+    .map-text p {
+      font-size: 2rem;
+      float: left;
+    }
+  
+    .popup-text {
+      font-size: 12px;
+    }
+  
+    .popup-stars i {
+      font-size: 14px;
+    }
+    
+.map{
+   
+    height: 100vh;
+    width: 100%;    
+    margin-top: 0;
+    
+}
+
+  }
+
+  @media (max-width: 1000px) {
+    .carousel {
+      display: flex;
+      flex-direction: column; /* Stack images vertically */
+      align-items: center; /* Center the images */
+    }
+  
+    .carousel img, .img-wrapper {
+      width: 90%; /* Set the image wrapper width to 90% of the parent */
+      height: auto; /* Adjust the height automatically */
+      margin: 10px 0; /* Add space between images */
+    }
+  
+    /* Adjust the caption positioning for stacked layout */
+    .caption {
+      font-size: 12px; /* Adjust font size for smaller screens */
+      text-align:  left;
+    }
+  
+    .carousel-container i {
+      display: none; /* Hide the arrows on smaller screens */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    /* Adjust the photo gallery to stack vertically under 600px */
+    .photo-gallery {
+        display: flex;
+        flex-direction: column; /* Stack images vertically */
+        gap: 10px;
+    }
+
+    .img-section {
+        flex-direction: column; /* Change the section to a column layout */
+        gap: 10px; /* Space between images */
+    }
+
+    .img-section img {
+        width: 100%; /* Make images take up full width */
+        height: auto; /* Let height adjust based on the aspect ratio */
+    }
+}
+
+@media (max-width: 450px) {
+    /* Adjust for even smaller screens */
+    .img-section {
+        width: 100vw; /* Ensure it fills the viewport */
+        padding: 10px; /* Add padding around the section */
+    }
+
+    .img-section img {
+        width: 100%; /* Make sure images fill the container */
+        height: auto; /* Let the image's height adjust proportionally */
+    }
+}
